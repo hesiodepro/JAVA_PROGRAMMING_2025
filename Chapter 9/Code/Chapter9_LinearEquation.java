@@ -58,6 +58,5 @@ public class Chapter9_LinearEquation {
         } else {
             System.out.println("The equation has no solution.");
         }
-        input.close();
     }
 }
