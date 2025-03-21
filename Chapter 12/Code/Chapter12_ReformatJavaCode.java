@@ -11,12 +11,9 @@ public class Chapter12_ReformatJavaCode {
         boolean isPreviousLineBrace = false;
         
         while ((line = reader.readLine()) != null) {
-            // Remove leading and trailing whitespaces from the line
             line = line.trim();
 
-            // Check for next-line brace style and convert it
             if (line.endsWith("{")) {
-                // If the previous line had a brace, append this line to it
                 if (isPreviousLineBrace) {
                     writer.write(" " + line);
                 } else {
