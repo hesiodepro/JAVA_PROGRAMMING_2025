@@ -23,7 +23,6 @@ public class Chapter12_CountChar_Words_Lines{
                 numOfLines++;
                 numOfCharacters += line.length();
 
-                // Split line into words using whitespace as a delimiter
                 String[] words = line.split("\\s+");
                 numOfWords += words.length;
             }
